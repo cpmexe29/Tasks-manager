@@ -1,6 +1,0 @@
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/Task3_0.dir
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/edit_cache.dir
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/rebuild_cache.dir
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/list_install_components.dir
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/install.dir
-C:/Users/cpmeg/Documents/Task3_0/build/x86_windows_msvc2022_pe_64bit-Release/CMakeFiles/install/local.dir
