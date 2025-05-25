@@ -1,24 +1,24 @@
 #include <iostream>
-#include <vector>
-#include <windows.h>
-#include <string>
-#include <algorithm>
+#include <vector> // добавлет векторы, нужны для сохранения заметок в процессе работы программы
+#include <windows.h> // функция Sleep() - пауза для удобства
+#include <string> // работа со строками
+//#include <algorithm>
 
 using namespace std;
 
-struct task
+struct task // структура каждой заметки, хранит всю информацию о заметке
 {
     string name;
     string description;
     bool complete;
     int id;
 
-    friend ostream& operator << (ostream& os, const task& t);
+    friend ostream& operator << (ostream& os, const task& t); // позволяет выводить в консоль сразу всю структуру
 };
 
-ostream& operator<<(ostream& os, const task& t) {
-    os << "ID: " << t.id
-       << ", Name: " << t.name
+ostream& operator<<(ostream& os, const task& t) { // шаблон вывода всей структуры (информации о заметке) в консоль
+    os << "ID: " << t.id // вывод ID заметки
+       << ", Name: " << t.name //вывод имени заметки
        << ", Description: " << t.description
        << ", Status: " << (t.complete ? "Completed" : "Not completed");
     return os;
@@ -58,9 +58,8 @@ void addTask()
 
 void showMenu()
 {
-    int choice = -1;
+    int choice = 0;
     while (choice != 5) {
-        //system("cls");
         cout << "Choose action:" << endl
              << "1. Add task." << endl
              << "2. Edit task." << endl
@@ -91,7 +90,7 @@ void Info()
         cout << n << endl;
     }
     cout << endl;
-    Sleep(500   );
+    Sleep(500);
 }
 
 void Edit()
